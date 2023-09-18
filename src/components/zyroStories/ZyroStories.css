@@ -1,0 +1,80 @@
+.zyroStories {
+    padding: 100px;
+    background-color: #f5f8fb;
+}
+
+.zyroStories h2 {
+    margin-bottom: 48px;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.zyroStories p {
+    max-width: 360px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto 66px;
+    text-align: center;
+}
+
+.custom-tab {
+    color: #f5526e !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #f5526e !important;
+}
+
+.client {
+    background-color: #f5f8fb;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.clientBlock {
+    padding: 24px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ebeff2;
+    border-radius: 6px;
+    max-width: 351px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.clientBlock p {
+    max-width: 330px;
+    color: #474b4f;
+    /* margin-bottom: 70px; */
+    height: 120px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.link {
+    display: flex;
+    width: 200px;
+    height: 56px;
+}
+
+.imgs {
+    width: 56px;
+    height: 56px;
+}
+
+.link-text h3 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 1.429;
+}
+
+.link-text a{
+    color: #474b4f;
+    font-size: 14px;
+    line-height: 1.429;
+}

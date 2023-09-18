@@ -1,0 +1,150 @@
+.websiteBuildplan {
+    padding: 100px;
+}
+
+.websiteBuildplan h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.167;
+    margin: 10px 0px 40px;
+}
+
+.guarantee-text {
+    max-width: 548px;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dde1e6;
+    border-radius: 8px;
+}
+
+.guarantee-text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.planContainer {
+    max-width: 548px;
+    margin: 0px auto 30px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.planBlock {
+    padding: 32px 24px;
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #dde1e6;
+    border-radius: 8px;
+    height: 480px;
+}
+
+.planBlock h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5
+}
+
+.discrip {
+    margin: 4px 0 24px;
+    color: #65696d;
+    font-size: 14px;
+}
+
+.strikPrice {
+    color: #72777c;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: line-through;
+}
+
+.offpercentage {
+    padding: 5px 8px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background: #fa2356;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.from {
+    width: 100%;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.pricePm {
+    font-size: 36px;
+    display: inline-block;
+    line-height: 44px;
+}
+
+.mo {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.vat {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #72777c;
+    font-size: 14px;
+    line-height: 1.429;
+}
+
+.planBlock button {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 24px;
+    width: 100%;
+    font-weight: 500;
+    line-height: 1.67;
+    text-transform: uppercase;
+    letter-spacing: 0.188em;
+    cursor: pointer;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    outline: 0;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: all;
+    transform: translate3d(0, 0, 0);
+    background-color: #3d2ca5;
+    color: #fff;
+}
+
+.planBlock button:hover {
+    background-color: #382a91;
+}
+
+.planBlock ul {
+    margin-top: 20px;
+}
+
+.planBlock li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.429;
+    letter-spacing: .017857em;
+    margin: 5px 0px;
+    cursor: help;
+}
+
+.websiteBuildplan h3 {
+    font-weight: 700;
+    color: #583bb6;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}

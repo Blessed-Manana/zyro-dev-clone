@@ -1,0 +1,92 @@
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #f5526e;
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    position: fixed;
+    transition: all 1s;
+    box-shadow: 1px 2px 3px #bebebe7c;
+    z-index: 2;
+}
+
+.logo{
+    width: 73px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.logo svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.left{
+    display: flex;
+    width: 60%;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.option button{
+    padding: 8px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    margin: 0px 13px;
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    justify-content: end;
+}
+
+.right button{
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    width: 153px;
+    height: 38.7px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.right button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.right a,.right button,.right select{
+    margin-left: 25px;
+}
+
+.right a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.right select{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;   
+}
