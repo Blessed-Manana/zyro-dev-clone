@@ -1,5 +1,12 @@
 import '../banner/Banner.css'
 import React, { useState, useRef, useEffect } from 'react'
+// import {VscGlobeFree} from "react-icons/vsc"
+// import {VPiHeadsetDuotone} from "react-icons/pi"
+// import {BsShieldCheck} from "react-icons/bs"
+import { FaGlobe } from 'react-icons/fa'
+import { PiHeadsetDuotone }  from 'react-icons/pi'
+import { BsShieldCheck } from 'react-icons/bs'
+
 
 const Banner = () => {
     const Ref = useRef(null);
@@ -42,7 +49,7 @@ const Banner = () => {
 
     const getDeadLine = () => {
 
-        let deadline = new Date('2023-09-18');
+        let deadline = new Date('2023-09-25');
 
         deadline.setSeconds(deadline.getSeconds() + 10);
 
@@ -81,9 +88,9 @@ const Banner = () => {
                 </div>
             </div>
             <div className="features">
-                <button>Free domain for 1 year</button>
-                <button>24/7 customer support</button>
-                <button>30-day money-back guarantee</button>
+                <button><FaGlobe style={{width:"52px", height: "52px", color:"#583bb6", padding:"16px", marginRight:"12px", backgroundColor:"#ece9f7", borderRadius: "8px"}}/> <span>domain for 1 year</span></button>
+                <button><PiHeadsetDuotone style={{width:"52px", height: "52px", color:"#583bb6", padding:"16px", marginRight:"12px", backgroundColor:"#ece9f7", borderRadius: "8px"}}/> <span>24/7 customer support</span></button>
+                <button><BsShieldCheck style={{width:"52px", height: "52px", color:"#583bb6", padding:"16px", marginRight:"12px", backgroundColor:"#ece9f7", borderRadius: "8px"}}/> <span>30-day money-back guarantee</span></button>
             </div>
         </div>
     );

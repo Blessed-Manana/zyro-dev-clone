@@ -18,8 +18,10 @@
     text-align: center;
 }
 
-.custom-tab {
+.Mui-selected{
     color: #f5526e !important;
+    font-weight: 700 !important;
+    transition: all 0.5s !important;
 }
 
 .MuiTabs-indicator {
@@ -77,4 +79,13 @@
     color: #474b4f;
     font-size: 14px;
     line-height: 1.429;
+}
+
+.MuiTabs-flexContainer{
+    box-shadow: none !important;
+    background-color: #f5f8fb !important;
+}
+
+.css-1ps6pg7-MuiPaper-root{
+    box-shadow: none !important;
 }

@@ -1,0 +1,60 @@
+.promoContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promoBlock {
+    width: 50%;
+    max-height: 496px;
+    padding: 50px 100px;
+}
+
+
+.promoBlock img {
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.promoBlock h2 {
+    margin-bottom: 32px;
+    max-width: 445px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.167;
+}
+
+.promoBlock p {
+    max-width: 450px;
+    margin-bottom: 32px;
+    color: #474b4f;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+
+.promoBlock button {
+    background-color: #fc2861;
+    border: none;
+    color: #fff;
+    padding: 18px 40px;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .188em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 1s;
+}
+
+.promoBlock button:hover{
+    background-color: #d42150;
+}
+
+.promoImg{
+    background-color:  #ebeff2;
+    padding-right: 10px !important;
+}
