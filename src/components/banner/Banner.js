@@ -1,8 +1,5 @@
 import '../banner/Banner.css'
 import React, { useState, useRef, useEffect } from 'react'
-// import {VscGlobeFree} from "react-icons/vsc"
-// import {VPiHeadsetDuotone} from "react-icons/pi"
-// import {BsShieldCheck} from "react-icons/bs"
 import { FaGlobe } from 'react-icons/fa'
 import { PiHeadsetDuotone }  from 'react-icons/pi'
 import { BsShieldCheck } from 'react-icons/bs'

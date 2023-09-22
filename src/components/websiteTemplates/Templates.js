@@ -1,9 +1,7 @@
 import React from 'react';
 import "../websiteTemplates/WebsiteTemplates.css"
 import { templatesArray } from '../../templates';
-// import {  } from "react-icons/fa6";
 import { FaRegEye } from 'react-icons/fa'
-// import { AiOutlineEye } from "react-icons/fa";
 
 
 const TabContent1 = () => {
@@ -82,7 +80,6 @@ const TabContent3 = () => {
                                 <img src={ele.image} alt={ele.image} />
                             </div>
                             <a href={ele.link} className="overLay">
-                                {/* <AiOutlineEye/> */}
                                 <FaRegEye/>
                             </a>
                         </div>
@@ -112,7 +109,6 @@ const TabContent4 = () => {
                                 <img src={ele.image} alt={ele.image} />
                             </div>
                             <a href={ele.link} className="overLay">
-                                {/* <AiOutlineEye/> */}
                                 <FaRegEye/>
                             </a>
                         </div>
@@ -141,7 +137,6 @@ const TabContent5 = () => {
                                 <img src={ele.image} alt={ele.image} />
                             </div>
                             <a href={ele.link} className="overLay">
-                                {/* <AiOutlineEye/> */}
                                 <FaRegEye/>
                             </a>
                         </div>
@@ -170,7 +165,6 @@ const TabContent6 = () => {
                                 <img src={ele.image} alt={ele.image} />
                             </div>
                             <a href={ele.link} className="overLay">
-                                {/* <AiOutlineEye/> */}
                                 <FaRegEye/>
                             </a>
                         </div>
@@ -199,7 +193,6 @@ const TabContent7 = () => {
                                 <img src={ele.image} alt={ele.image} />
                             </div>
                             <a href={ele.link} className="overLay">
-                                {/* <AiOutlineEye/> */}
                                 <FaRegEye/>
                             </a>
                         </div>
