@@ -1,39 +1,38 @@
 import '../banner/Banner.css'
 import React, { useState, useRef, useEffect } from 'react'
 import { FaGlobe } from 'react-icons/fa'
-import { PiHeadsetDuotone }  from 'react-icons/pi'
+import { PiHeadsetDuotone } from 'react-icons/pi'
 import { BsShieldCheck } from 'react-icons/bs'
 
-
 const Banner = () => {
-    const Ref = useRef(null);
-    const [timer, setTimer] = useState('00:00:00');
+  const Ref = useRef(null)
+  const [timer, setTimer] = useState('00:00:00')
 
-    const getLeftOverTime = (e) => {
-        let total = Date.parse(e) - Date.parse(new Date());
-        let seconds = Math.floor((total / 1000) % 60);
-        let minutes = Math.floor((total / 1000 / 60) % 60);
-        let hours = Math.floor((total / 1000 / 60 / 60) % 24);
-        let days = Math.floor(total / (1000 * 60 * 60 * 24));
-        return {
-            total, days, seconds, minutes, hours
-        };
+  const getLeftOverTime = (e) => {
+    const total = Date.parse(e) - Date.parse(new Date())
+    const seconds = Math.floor((total / 1000) % 60)
+    const minutes = Math.floor((total / 1000 / 60) % 60)
+    const hours = Math.floor((total / 1000 / 60 / 60) % 24)
+    const days = Math.floor(total / (1000 * 60 * 60 * 24))
+    return {
+      total, days, seconds, minutes, hours
     }
+  }
 
-    const startTimer = (e) => {
-        let { total, days, seconds, minutes, hours } = getLeftOverTime(e);
+  const startTimer = (e) => {
+    const { total, days, seconds, minutes, hours } = getLeftOverTime(e)
 
-        if (total >= 0) {
-            setTimer(
-                (days > 9 ? days : '0' + days) + ':' +
-                (hours > 9 ? hours : '0' + hours) + ':' +
-                (minutes > 9 ? minutes : '0' + minutes) + ':' +
-                (seconds > 9 ? seconds : '0' + seconds)
-            )
-        }
+    if (total >= 0) {
+      setTimer(
+        (days > 9 ? days : '0' + days) + ':' +
+        (hours > 9 ? hours : '0' + hours) + ':' +
+        (minutes > 9 ? minutes : '0' + minutes) + ':' +
+        (seconds > 9 ? seconds : '0' + seconds)
+      )
     }
+  }
 
-    const clearTimer = (e) => {
+  const clearTimer = (e) => {
         startTimer('00:00:00:59')
 
         if (Ref.current) clearInterval(Ref.current);
@@ -85,9 +84,9 @@ const Banner = () => {
                 </div>
             </div>
             <div className="features">
-                <button><FaGlobe style={{width:"52px", height: "52px", color:"#583bb6", padding:"16px", marginRight:"12px", backgroundColor:"#ece9f7", borderRadius: "8px"}}/> <span>domain for 1 year</span></button>
-                <button><PiHeadsetDuotone style={{width:"52px", height: "52px", color:"#583bb6", padding:"16px", marginRight:"12px", backgroundColor:"#ece9f7", borderRadius: "8px"}}/> <span>24/7 customer support</span></button>
-                <button><BsShieldCheck style={{width:"52px", height: "52px", color:"#583bb6", padding:"16px", marginRight:"12px", backgroundColor:"#ece9f7", borderRadius: "8px"}}/> <span>30-day money-back guarantee</span></button>
+                <button><FaGlobe style={{ width: "52px", height: "52px", color: "#583bb6", padding: "16px", marginRight: "12px", backgroundColor: "#ece9f7", borderRadius: "8px" }} /> <span>domain for 1 year</span></button>
+                <button><PiHeadsetDuotone style={{ width: "52px", height: "52px", color: "#583bb6", padding: "16px", marginRight: "12px", backgroundColor: "#ece9f7", borderRadius: "8px" }} /> <span>24/7 customer support</span></button>
+                <button><BsShieldCheck style={{ width: "52px", height: "52px", color: "#583bb6", padding: "16px", marginRight: "12px", backgroundColor: "#ece9f7", borderRadius: "8px" }} /> <span>30-day money-back guarantee</span></button>
             </div>
         </div>
     );
